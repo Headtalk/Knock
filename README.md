@@ -29,3 +29,5 @@ Important: Different platforms (Android vs iOS) and form factors (Watch, Tablet,
 
 Dependencies: 
 The test suite relies on OCMock, a 3rd party framework included in this project.
+
+The app require CoreMotion.framework, by Apple

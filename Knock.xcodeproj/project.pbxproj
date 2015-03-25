@@ -13,7 +13,33 @@
 		79DC13DF1AC2390200298A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79DC13DD1AC2390200298A23 /* Main.storyboard */; };
 		79DC13E11AC2390200298A23 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79DC13E01AC2390200298A23 /* Images.xcassets */; };
 		79DC13E41AC2390200298A23 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79DC13E21AC2390200298A23 /* LaunchScreen.xib */; };
-		79DC13F01AC2390200298A23 /* KnockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DC13EF1AC2390200298A23 /* KnockTests.m */; };
+		79DC14031AC23EE300298A23 /* HTKnockDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DC14021AC23EE300298A23 /* HTKnockDetector.m */; };
+		79DC141C1AC23EF900298A23 /* heldKnocksBack6-10.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC14051AC23EF900298A23 /* heldKnocksBack6-10.csv */; };
+		79DC141D1AC23EF900298A23 /* heldKnocksBack6-3.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC14061AC23EF900298A23 /* heldKnocksBack6-3.csv */; };
+		79DC141E1AC23EF900298A23 /* heldKnocksFront6-12.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC14071AC23EF900298A23 /* heldKnocksFront6-12.csv */; };
+		79DC141F1AC23EF900298A23 /* heldKnocksFront6-3.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC14081AC23EF900298A23 /* heldKnocksFront6-3.csv */; };
+		79DC14201AC23EF900298A23 /* heldPokesBack6.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC14091AC23EF900298A23 /* heldPokesBack6.csv */; };
+		79DC14211AC23EF900298A23 /* heldPokesFront6.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC140A1AC23EF900298A23 /* heldPokesFront6.csv */; };
+		79DC14221AC23EF900298A23 /* heldRandomShake6.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC140B1AC23EF900298A23 /* heldRandomShake6.csv */; };
+		79DC14231AC23EF900298A23 /* heldRandomWave6.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC140C1AC23EF900298A23 /* heldRandomWave6.csv */; };
+		79DC14241AC23EF900298A23 /* heldTablePlaceFront6.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC140D1AC23EF900298A23 /* heldTablePlaceFront6.csv */; };
+		79DC14251AC23EF900298A23 /* pocketKnocksBack6-4.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC140E1AC23EF900298A23 /* pocketKnocksBack6-4.csv */; };
+		79DC14261AC23EF900298A23 /* pocketKnocksBack6-5.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC140F1AC23EF900298A23 /* pocketKnocksBack6-5.csv */; };
+		79DC14271AC23EF900298A23 /* pocketKnocksBack6-6.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC14101AC23EF900298A23 /* pocketKnocksBack6-6.csv */; };
+		79DC14281AC23EF900298A23 /* pocketKnocksBackFrontPocket6-6.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC14111AC23EF900298A23 /* pocketKnocksBackFrontPocket6-6.csv */; };
+		79DC14291AC23EF900298A23 /* pocketKnocksFront6-10.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC14121AC23EF900298A23 /* pocketKnocksFront6-10.csv */; };
+		79DC142A1AC23EF900298A23 /* pocketKnocksFront6-5.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC14131AC23EF900298A23 /* pocketKnocksFront6-5.csv */; };
+		79DC142B1AC23EF900298A23 /* pocketPokesBack6.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC14141AC23EF900298A23 /* pocketPokesBack6.csv */; };
+		79DC142C1AC23EF900298A23 /* pocketPokesFront6.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC14151AC23EF900298A23 /* pocketPokesFront6.csv */; };
+		79DC142D1AC23EF900298A23 /* pocketRandomArmsStairsBack6.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC14161AC23EF900298A23 /* pocketRandomArmsStairsBack6.csv */; };
+		79DC142E1AC23EF900298A23 /* pocketRandomShakeBack6.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC14171AC23EF900298A23 /* pocketRandomShakeBack6.csv */; };
+		79DC142F1AC23EF900298A23 /* pocketRandomSquatBack6.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC14181AC23EF900298A23 /* pocketRandomSquatBack6.csv */; };
+		79DC14301AC23EF900298A23 /* tableKnocksBack6-5.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC14191AC23EF900298A23 /* tableKnocksBack6-5.csv */; };
+		79DC14311AC23EF900298A23 /* tableKnocksFront6-20.csv in Resources */ = {isa = PBXBuildFile; fileRef = 79DC141A1AC23EF900298A23 /* tableKnocksFront6-20.csv */; };
+		79DC14321AC23EF900298A23 /* HTKnockDetectorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DC141B1AC23EF900298A23 /* HTKnockDetectorTest.m */; };
+		79DC143F1AC23F0D00298A23 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DC14341AC23F0D00298A23 /* libOCMock.a */; };
+		79DC14411AC23F3C00298A23 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DC14401AC23F3C00298A23 /* CoreMotion.framework */; };
+		79DC14431AC23F8C00298A23 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DC14401AC23F3C00298A23 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +65,42 @@
 		79DC13E31AC2390200298A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		79DC13E91AC2390200298A23 /* KnockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79DC13EE1AC2390200298A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79DC13EF1AC2390200298A23 /* KnockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnockTests.m; sourceTree = "<group>"; };
+		79DC14011AC23EE300298A23 /* HTKnockDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTKnockDetector.h; sourceTree = "<group>"; };
+		79DC14021AC23EE300298A23 /* HTKnockDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTKnockDetector.m; sourceTree = "<group>"; };
+		79DC14051AC23EF900298A23 /* heldKnocksBack6-10.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "heldKnocksBack6-10.csv"; sourceTree = "<group>"; };
+		79DC14061AC23EF900298A23 /* heldKnocksBack6-3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "heldKnocksBack6-3.csv"; sourceTree = "<group>"; };
+		79DC14071AC23EF900298A23 /* heldKnocksFront6-12.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "heldKnocksFront6-12.csv"; sourceTree = "<group>"; };
+		79DC14081AC23EF900298A23 /* heldKnocksFront6-3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "heldKnocksFront6-3.csv"; sourceTree = "<group>"; };
+		79DC14091AC23EF900298A23 /* heldPokesBack6.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = heldPokesBack6.csv; sourceTree = "<group>"; };
+		79DC140A1AC23EF900298A23 /* heldPokesFront6.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = heldPokesFront6.csv; sourceTree = "<group>"; };
+		79DC140B1AC23EF900298A23 /* heldRandomShake6.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = heldRandomShake6.csv; sourceTree = "<group>"; };
+		79DC140C1AC23EF900298A23 /* heldRandomWave6.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = heldRandomWave6.csv; sourceTree = "<group>"; };
+		79DC140D1AC23EF900298A23 /* heldTablePlaceFront6.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = heldTablePlaceFront6.csv; sourceTree = "<group>"; };
+		79DC140E1AC23EF900298A23 /* pocketKnocksBack6-4.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pocketKnocksBack6-4.csv"; sourceTree = "<group>"; };
+		79DC140F1AC23EF900298A23 /* pocketKnocksBack6-5.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pocketKnocksBack6-5.csv"; sourceTree = "<group>"; };
+		79DC14101AC23EF900298A23 /* pocketKnocksBack6-6.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pocketKnocksBack6-6.csv"; sourceTree = "<group>"; };
+		79DC14111AC23EF900298A23 /* pocketKnocksBackFrontPocket6-6.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pocketKnocksBackFrontPocket6-6.csv"; sourceTree = "<group>"; };
+		79DC14121AC23EF900298A23 /* pocketKnocksFront6-10.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pocketKnocksFront6-10.csv"; sourceTree = "<group>"; };
+		79DC14131AC23EF900298A23 /* pocketKnocksFront6-5.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pocketKnocksFront6-5.csv"; sourceTree = "<group>"; };
+		79DC14141AC23EF900298A23 /* pocketPokesBack6.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pocketPokesBack6.csv; sourceTree = "<group>"; };
+		79DC14151AC23EF900298A23 /* pocketPokesFront6.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pocketPokesFront6.csv; sourceTree = "<group>"; };
+		79DC14161AC23EF900298A23 /* pocketRandomArmsStairsBack6.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pocketRandomArmsStairsBack6.csv; sourceTree = "<group>"; };
+		79DC14171AC23EF900298A23 /* pocketRandomShakeBack6.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pocketRandomShakeBack6.csv; sourceTree = "<group>"; };
+		79DC14181AC23EF900298A23 /* pocketRandomSquatBack6.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pocketRandomSquatBack6.csv; sourceTree = "<group>"; };
+		79DC14191AC23EF900298A23 /* tableKnocksBack6-5.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "tableKnocksBack6-5.csv"; sourceTree = "<group>"; };
+		79DC141A1AC23EF900298A23 /* tableKnocksFront6-20.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "tableKnocksFront6-20.csv"; sourceTree = "<group>"; };
+		79DC141B1AC23EF900298A23 /* HTKnockDetectorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTKnockDetectorTest.m; sourceTree = "<group>"; };
+		79DC14341AC23F0D00298A23 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		79DC14361AC23F0D00298A23 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		79DC14371AC23F0D00298A23 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		79DC14381AC23F0D00298A23 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		79DC14391AC23F0D00298A23 /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMLocation.h; sourceTree = "<group>"; };
+		79DC143A1AC23F0D00298A23 /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
+		79DC143B1AC23F0D00298A23 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		79DC143C1AC23F0D00298A23 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		79DC143D1AC23F0D00298A23 /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
+		79DC143E1AC23F0D00298A23 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
+		79DC14401AC23F3C00298A23 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79DC14411AC23F3C00298A23 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +116,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79DC14431AC23F8C00298A23 /* CoreMotion.framework in Frameworks */,
+				79DC143F1AC23F0D00298A23 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +127,7 @@
 		79DC13C71AC2390200298A23 = {
 			isa = PBXGroup;
 			children = (
+				79DC14401AC23F3C00298A23 /* CoreMotion.framework */,
 				79DC13D21AC2390200298A23 /* Knock */,
 				79DC13EC1AC2390200298A23 /* KnockTests */,
 				79DC13D11AC2390200298A23 /* Products */,
@@ -81,6 +146,7 @@
 		79DC13D21AC2390200298A23 /* Knock */ = {
 			isa = PBXGroup;
 			children = (
+				79DC14001AC23EE300298A23 /* HTKnockDetector */,
 				79DC13D71AC2390200298A23 /* AppDelegate.h */,
 				79DC13D81AC2390200298A23 /* AppDelegate.m */,
 				79DC13DA1AC2390200298A23 /* ViewController.h */,
@@ -105,7 +171,9 @@
 		79DC13EC1AC2390200298A23 /* KnockTests */ = {
 			isa = PBXGroup;
 			children = (
-				79DC13EF1AC2390200298A23 /* KnockTests.m */,
+				79DC14331AC23F0D00298A23 /* OCMock */,
+				79DC14041AC23EF900298A23 /* TestData */,
+				79DC141B1AC23EF900298A23 /* HTKnockDetectorTest.m */,
 				79DC13ED1AC2390200298A23 /* Supporting Files */,
 			);
 			path = KnockTests;
@@ -117,6 +185,69 @@
 				79DC13EE1AC2390200298A23 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79DC14001AC23EE300298A23 /* HTKnockDetector */ = {
+			isa = PBXGroup;
+			children = (
+				79DC14011AC23EE300298A23 /* HTKnockDetector.h */,
+				79DC14021AC23EE300298A23 /* HTKnockDetector.m */,
+			);
+			path = HTKnockDetector;
+			sourceTree = SOURCE_ROOT;
+		};
+		79DC14041AC23EF900298A23 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				79DC14051AC23EF900298A23 /* heldKnocksBack6-10.csv */,
+				79DC14061AC23EF900298A23 /* heldKnocksBack6-3.csv */,
+				79DC14071AC23EF900298A23 /* heldKnocksFront6-12.csv */,
+				79DC14081AC23EF900298A23 /* heldKnocksFront6-3.csv */,
+				79DC14091AC23EF900298A23 /* heldPokesBack6.csv */,
+				79DC140A1AC23EF900298A23 /* heldPokesFront6.csv */,
+				79DC140B1AC23EF900298A23 /* heldRandomShake6.csv */,
+				79DC140C1AC23EF900298A23 /* heldRandomWave6.csv */,
+				79DC140D1AC23EF900298A23 /* heldTablePlaceFront6.csv */,
+				79DC140E1AC23EF900298A23 /* pocketKnocksBack6-4.csv */,
+				79DC140F1AC23EF900298A23 /* pocketKnocksBack6-5.csv */,
+				79DC14101AC23EF900298A23 /* pocketKnocksBack6-6.csv */,
+				79DC14111AC23EF900298A23 /* pocketKnocksBackFrontPocket6-6.csv */,
+				79DC14121AC23EF900298A23 /* pocketKnocksFront6-10.csv */,
+				79DC14131AC23EF900298A23 /* pocketKnocksFront6-5.csv */,
+				79DC14141AC23EF900298A23 /* pocketPokesBack6.csv */,
+				79DC14151AC23EF900298A23 /* pocketPokesFront6.csv */,
+				79DC14161AC23EF900298A23 /* pocketRandomArmsStairsBack6.csv */,
+				79DC14171AC23EF900298A23 /* pocketRandomShakeBack6.csv */,
+				79DC14181AC23EF900298A23 /* pocketRandomSquatBack6.csv */,
+				79DC14191AC23EF900298A23 /* tableKnocksBack6-5.csv */,
+				79DC141A1AC23EF900298A23 /* tableKnocksFront6-20.csv */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+		79DC14331AC23F0D00298A23 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				79DC14341AC23F0D00298A23 /* libOCMock.a */,
+				79DC14351AC23F0D00298A23 /* OCMock */,
+			);
+			path = OCMock;
+			sourceTree = SOURCE_ROOT;
+		};
+		79DC14351AC23F0D00298A23 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				79DC14361AC23F0D00298A23 /* NSNotificationCenter+OCMAdditions.h */,
+				79DC14371AC23F0D00298A23 /* OCMArg.h */,
+				79DC14381AC23F0D00298A23 /* OCMConstraint.h */,
+				79DC14391AC23F0D00298A23 /* OCMLocation.h */,
+				79DC143A1AC23F0D00298A23 /* OCMMacroState.h */,
+				79DC143B1AC23F0D00298A23 /* OCMock.h */,
+				79DC143C1AC23F0D00298A23 /* OCMockObject.h */,
+				79DC143D1AC23F0D00298A23 /* OCMRecorder.h */,
+				79DC143E1AC23F0D00298A23 /* OCMStubRecorder.h */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +340,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79DC14281AC23EF900298A23 /* pocketKnocksBackFrontPocket6-6.csv in Resources */,
+				79DC14221AC23EF900298A23 /* heldRandomShake6.csv in Resources */,
+				79DC14201AC23EF900298A23 /* heldPokesBack6.csv in Resources */,
+				79DC14261AC23EF900298A23 /* pocketKnocksBack6-5.csv in Resources */,
+				79DC142F1AC23EF900298A23 /* pocketRandomSquatBack6.csv in Resources */,
+				79DC14251AC23EF900298A23 /* pocketKnocksBack6-4.csv in Resources */,
+				79DC14291AC23EF900298A23 /* pocketKnocksFront6-10.csv in Resources */,
+				79DC14311AC23EF900298A23 /* tableKnocksFront6-20.csv in Resources */,
+				79DC142D1AC23EF900298A23 /* pocketRandomArmsStairsBack6.csv in Resources */,
+				79DC142C1AC23EF900298A23 /* pocketPokesFront6.csv in Resources */,
+				79DC14211AC23EF900298A23 /* heldPokesFront6.csv in Resources */,
+				79DC142A1AC23EF900298A23 /* pocketKnocksFront6-5.csv in Resources */,
+				79DC141D1AC23EF900298A23 /* heldKnocksBack6-3.csv in Resources */,
+				79DC14231AC23EF900298A23 /* heldRandomWave6.csv in Resources */,
+				79DC141F1AC23EF900298A23 /* heldKnocksFront6-3.csv in Resources */,
+				79DC141E1AC23EF900298A23 /* heldKnocksFront6-12.csv in Resources */,
+				79DC14241AC23EF900298A23 /* heldTablePlaceFront6.csv in Resources */,
+				79DC142B1AC23EF900298A23 /* pocketPokesBack6.csv in Resources */,
+				79DC14301AC23EF900298A23 /* tableKnocksBack6-5.csv in Resources */,
+				79DC14271AC23EF900298A23 /* pocketKnocksBack6-6.csv in Resources */,
+				79DC142E1AC23EF900298A23 /* pocketRandomShakeBack6.csv in Resources */,
+				79DC141C1AC23EF900298A23 /* heldKnocksBack6-10.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79DC14031AC23EE300298A23 /* HTKnockDetector.m in Sources */,
 				79DC13DC1AC2390200298A23 /* ViewController.m in Sources */,
 				79DC13D91AC2390200298A23 /* AppDelegate.m in Sources */,
 				79DC13D61AC2390200298A23 /* main.m in Sources */,
@@ -229,7 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79DC13F01AC2390200298A23 /* KnockTests.m in Sources */,
+				79DC14321AC23EF900298A23 /* HTKnockDetectorTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +451,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					./OCMock,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +492,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					./OCMock,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -347,6 +511,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Knock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCMock",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -357,6 +525,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Knock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCMock",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -375,6 +547,10 @@
 				);
 				INFOPLIST_FILE = KnockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCMock",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Knock.app/Knock";
 			};
@@ -390,6 +566,10 @@
 				);
 				INFOPLIST_FILE = KnockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCMock",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Knock.app/Knock";
 			};

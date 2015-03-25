@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HTKnockDetector.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <HTKnockDetectorDelegate>
+@property (nonatomic, strong) HTKnockDetector * knockDetector;
 
-
+@property (nonatomic, strong) IBOutlet UILabel * knockLabel;
 @end
 
