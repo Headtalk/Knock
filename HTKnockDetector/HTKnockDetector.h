@@ -6,10 +6,6 @@
 //  Copyright (c) 2015 Headtalk, Inc. All rights reserved.
 //
 
-//TODO:
-//1) Make sure adapts to changes in actual detection time
-//Why? Because samples are not guaranteed to come in at the speicified spacing
-
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CoreMotion.h>
 
@@ -35,12 +31,24 @@ typedef struct{
 -(void)knockDetectorDetectedKnock:(HTKnockDetector*)detector atTime:(NSTimeInterval)time;
 @end
 
+/// A simple detector for physical knocks, tuned for the Z-axis of iPhone 5s and 6 devices. Just set `delegate` and `isOn` to receive Knock events.
+///
+/// HTKnockDetector can even run in background (depending on your background modes)! You will need to set `isOn` false, and then true after backgrounding for iOS to send the detector events in background.
 @interface HTKnockDetector : NSObject{
     hpf alg;
 }
 
 @property (nonatomic, weak) id<HTKnockDetectorDelegate> delegate;
-//accelerometer, a private property
-@property (nonatomic, strong) CMMotionManager * motionManager;
 @property (nonatomic, assign) BOOL isOn;
+
+/**
+ Tunes algorithm.
+ @param fc The cutoff frequency for the algorithm. Default 15.0. The frequency of an average knock is 20, as the maximum interval of the knocks I saw in tests was .05s. At 15, it slightly overdetects, at 20 it underdetects, which I bet would get people to conform to the algorithm if they have feedback.
+  @param minAccel The minimum acceleration to trigger a knock event. Default 0.75f(G).
+  @param separation The minimum time separation between detected knock events. Default 0.1f(s).
+ */
+-(void) tuneAlgorithmToCutoffFrequency:(double)fc minimumAcceleration:(double)minAccel minimumKnockSeparation:(double)separation;
+
+///the accelerometer, a protected property, exposed here for Mock testing
+@property (nonatomic, strong) CMMotionManager * motionManager;
 @end

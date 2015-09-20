@@ -8,13 +8,18 @@
 
 #import "HTKnockDetector.h"
 
-
 @interface HTKnockDetector()
 -(void)_start;
 -(void)_stop;
 @end
 
 @implementation HTKnockDetector
+-(id) init {
+    if (self = [super init]){
+        [self tuneAlgorithmToCutoffFrequency:15.0 minimumAcceleration:0.75f minimumKnockSeparation:0.1f];
+    }
+    return self;
+}
 
 -(void)setIsOn:(BOOL)isOn{
     if (isOn != _isOn){
@@ -32,21 +37,20 @@
         _motionManager = [[CMMotionManager alloc] init];
         _motionManager.deviceMotionUpdateInterval = .01;
     }
-    
     return _motionManager;
 }
 
--(void) tuneAlgorithmToCutoffFrequency:(double)fc sampleInterval:(double)delT{
-    alg.fc = fc;
+-(void) tuneAlgorithmToCutoffFrequency:(double)fc minimumAcceleration:(double)minAccel minimumKnockSeparation:(double)separation{
+    double delT = self.motionManager.deviceMotionUpdateInterval;
     alg.delT = delT;
+    alg.fc = fc;
     
     double RC = 1.0/(2*M_PI*fc);
     double alpha = RC/ (RC + delT);
-    
     alg.alpha = alpha;
     
-    alg.minAccel = 0.75f;
-    alg.minKnockSeparation = 0.1f;
+    alg.minAccel = minAccel;
+    alg.minKnockSeparation = separation;
 }
 
 -(void) processNextMotion:(CMDeviceMotion*)motion{
@@ -55,7 +59,6 @@
     alg.Xi      = newZ;
     
     alg.Yim1    = alg.Yi;
-    
     alg.Yi = alg.alpha*alg.Yim1 + alg.alpha*(alg.Xi-alg.Xim1);
     
     if (fabs(alg.Yi) > alg.minAccel){
@@ -67,12 +70,6 @@
 }
 
 -(void)_start{
-    //I beleive the real frequency is .05, because that's the max interval of the knock
-    //At 15, it slightly overdetects, at 20 it underdetects, I bet it'll get people to conform to the algorithm
-    //– I think that could be good for Yo, don't really want people afraid of their phones
-    //- But for LDRs, people get used to the stray tap… I gets them to engage… know they're there
-    [self tuneAlgorithmToCutoffFrequency:15.0 sampleInterval:self.motionManager.deviceMotionUpdateInterval];
-    
     HTKnockDetector * __weak weakSelf = self;
     if (self.motionManager.deviceMotionAvailable) {
         [self.motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue mainQueue]
@@ -80,10 +77,9 @@
                  [weakSelf processNextMotion:data];
              }];
     }
-    
 }
+
 -(void)_stop{
     [self.motionManager stopDeviceMotionUpdates];
 }
-
 @end
