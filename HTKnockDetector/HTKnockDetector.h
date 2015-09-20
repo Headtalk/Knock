@@ -33,7 +33,8 @@ typedef struct{
 
 /// A simple detector for physical knocks, tuned for the Z-axis of iPhone 5s and 6 devices. Just set `delegate` and `isOn` to receive Knock events.
 ///
-/// HTKnockDetector can even run in background (depending on your background modes)! You will need to set `isOn` false, and then true after backgrounding for iOS to send the detector events in background.
+/// HTKnockDetector can even run in background, depending on your background modes! You will need to set `isOn = false`, and then `isOn = true` after backgrounding for Core Motion to send the detector events during background operation.
+
 @interface HTKnockDetector : NSObject{
     hpf alg;
 }

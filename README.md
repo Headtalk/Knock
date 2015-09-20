@@ -2,6 +2,8 @@
 
 *Written by Alex List, Headtalk Inc, Spring 2015. License– bottom of document.*
 
+<img src="http://i.imgur.com/t4abQnA.gif" />
+
 ###Quick start
 1. Drag `HTKnockDetector.h`, `HTKnockDetector.m` into your project.
 2. Import `CoreMotion.framework` into your project.
@@ -36,7 +38,7 @@ Run the `XCode tests` in `Knock.xcodeproj` by going to **Product > Test**.
 2. **Fix testing style.** *Many tests do not pass, but instead verbosely print the number of missed knocks.* A `performance`-type test would be more appropriate. One solution with `XCTest` is using `[self measureBlock]` with `testPerformance` cases, in which time delays are invoked for missed Knocks, indicating performance without *failing*.
 
 ###Important.
-Different platforms (Android vs iOS) and form factors (Watch, Tablet, etc) will have different acceleration values for similar knocks. You may need to determine the frequency and acceleration of knocks on those platforms. 
+Different platforms (Android vs iOS) and form factors (Watch, Tablet, etc) will have different acceleration values for similar knocks. You may need to determine the frequency and acceleration of knocks on those platforms.
 
 ###Dependencies.
 The test suite relies on OCMock, a 3rd party framework included in this project.
