@@ -33,6 +33,8 @@ Run the `XCode tests` in `Knock.xcodeproj` by going to **Product > Test**.
 
 
 ### TODO.
+*Knock works in production right now, but the following would help futureproof:*
+
 1. **Reflect variable sampling rate in algorithm.** *Data from Core Motion is not guaranteed to be equally spaced in time. This is especially problematic in background modes, and when resuming from background.* An update would actually use the time spacing returned with data.
 
 2. **Fix testing style.** *Many tests do not pass, but instead verbosely print the number of missed knocks.* A `performance`-type test would be more appropriate. One solution with `XCTest` is using `[self measureBlock]` with `testPerformance` cases, in which time delays are invoked for missed Knocks, indicating performance without *failing*.
